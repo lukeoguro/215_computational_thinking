@@ -55,12 +55,12 @@ function addCheckDigit(inputString) {
   }
 }
 
-console.log(validLuhnNumber(addCheckDigit('1111'))); // false
-console.log(validLuhnNumber(addCheckDigit('1123233211'))); // false
-console.log(validLuhnNumber(addCheckDigit('111123585851'))); // false
-console.log(validLuhnNumber(addCheckDigit('11123412341234123413241'))); // false
-console.log(validLuhnNumber(addCheckDigit('11234123412341234i4 234k 32k4 234i234i111'))); // false
+console.log(validLuhnNumber(addCheckDigit('1111'))); // true
+console.log(validLuhnNumber(addCheckDigit('1123233211'))); // true
+console.log(validLuhnNumber(addCheckDigit('111123585851'))); // true
+console.log(validLuhnNumber(addCheckDigit('11123412341234123413241'))); // true
+console.log(validLuhnNumber(addCheckDigit('11234123412341234i4 234k 32k4 234i234i111'))); // true
 console.log(validLuhnNumber(addCheckDigit('8763'))); // true
 console.log(validLuhnNumber(addCheckDigit('2323 2005 7766 3554'))); // true
 console.log(validLuhnNumber(addCheckDigit('2323 2005 7766.3554'))); // true
-console.log(validLuhnNumber(addCheckDigit('2323 2005 7766.3553'))); // false
+console.log(validLuhnNumber(addCheckDigit('2323 2005 7766.3553'))); // true
